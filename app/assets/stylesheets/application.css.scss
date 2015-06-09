@@ -97,14 +97,20 @@ a {
 	}
 }
 
+	
+		
+		
+#button_logout {
+	position: absolute;
+	top: .8em;
+	right: 5.3em;
+	font-size: 12.2px;
+}
+
 #button_delete  {
 	position: absolute;
 	margin-top: -46px;
 	right: 5%;
-	
-
-
-
 }
 
 .clearfix:after {
@@ -133,7 +139,7 @@ a {
 			margin-top: -6px;
 			.button {
 				font-size: .8em;
-				margin-left: .5em;
+				margin-right: 10em;
 			}
 		}
 	}
