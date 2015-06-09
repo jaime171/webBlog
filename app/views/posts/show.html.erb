@@ -5,10 +5,12 @@
 
 	<p class="date">
 		Submitted <%= time_ago_in_words(@post.created_at) %> Ago
-		| <%= link_to 'Edit', edit_post_path(@post) %> 
-		<div id="button_delete"> 
-		  <%= button_to 'Delete', post_path(@post), :method=>:delete, :class=>:destroy , :data => {:confirm => 'Are you sure?'}  %>
-		</div>
+		<% if user_signed_in? %>
+			| <%= link_to 'Edit', edit_post_path(@post) %> 
+			<div id="button_delete"> 
+			  <%= button_to 'Delete', post_path(@post), :method=>:delete, :class=>:destroy , :data => {:confirm => 'Are you sure?'}  %>
+			</div>
+		<% end %>
 	</p>
 
 	<p class="body">
