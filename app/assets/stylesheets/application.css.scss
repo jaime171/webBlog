@@ -311,14 +311,15 @@ a {
 		display: none;
 	}
 	#main_content{
-		margin-left: -30px;
+		margin-left: 0%;
 		margin-top: 150px;
 		position: relative;
-		font-size: 15px;
+		font-size: 14px;
 		padding: 0em 0em !important;
 	}
 	p{
-		width: 110%;
+		width: 100%;
+		text-align: center;
 	}
 	
 	textarea {
@@ -328,7 +329,7 @@ a {
 		width: 80% !important;
 	}
 	input[type="submit"] {
-		margin-left: 12% !important;
+		margin-left: 0% !important;
 	}
 	.buttons{
 		display: none;
