@@ -15,7 +15,8 @@
 
 	<p class="body">
 		<%= @post.body %>
-		<%= link_to 'Share on Facebook', "https://www.facebook.com/dialog/share?
+		<br><br>
+		<%= button_to 'Share on Facebook', "https://www.facebook.com/dialog/share?
   		app_id=383082531894711&href=#{request.original_url}&redirect_uri=#{request.original_url}" %>
 	</p>
 
