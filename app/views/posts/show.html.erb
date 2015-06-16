@@ -22,6 +22,9 @@
 		<%= render @post.comments %>
 
 		<h3>Add a comment:</h3>
+		<%= link_to 'Share on Facebook', "https://www.facebook.com/dialog/share?
+  app_id=383082531894711&href=#{request.original_url}&redirect_uri=#{request.original_url}" %>
 		<%= render "comments/form" %>
+
 	</div>
 </div>
