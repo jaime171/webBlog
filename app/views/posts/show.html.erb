@@ -15,12 +15,12 @@
 
 	<p class="body">
 		<%= @post.body %>
-		<br><br>
-		<%= button_to 'Share on Facebook', "https://www.facebook.com/dialog/share?
-  		app_id=383082531894711&href=#{request.original_url}&redirect_uri=#{request.original_url}" %>
-	</p>
+		</p>
 
 	<div id="comments">
+		<%= button_to 'Share on Facebook', "https://www.facebook.com/dialog/share?
+  		app_id=383082531894711&href=#{request.original_url}&redirect_uri=#{request.original_url}" %>
+  		<br><br>
 		<h2><%= @post.comments.count %> Comments</h2>
 		<%= render @post.comments %>
 
